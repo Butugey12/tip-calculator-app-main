@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body {
+  font-family:"Space Mono" , sans-serif; 
+  background-color:hsl(185, 41%, 84%);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:2rem;
+  font-weight:700;
+  color:hsl(186, 14%, 43%);
+
+}
+.splitter {
+  margin:2rem;
+  padding:1rem;
+}
+
+button input li{
+  font-family: inherit;
+}
+
+main {
+  background-color: white;
+  padding:1rem;
+  display:flex;
+  gap:2rem;
+  padding:2rem;
+  border-radius: 0.9rem;;
+}
+.left-container p {
+  font-size: 14px;
+}
+.left-container input {
+  background-color: hsl(180, 11%, 84%);
+  color: hsl(183, 100%, 15%);
+  border:none;
+  border-radius: 0.3rem;
+  padding:0.3rem;
+  text-align: right;
+  font-family: inherit;
+  text-align: right;
+  margin-bottom:1rem;
+  width:100%;
+}
+
+.tip-percentages {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribute items evenly in the container */
+  padding: 5px; /* Adding some padding for nicer look */
+  margin-left:-0.9rem;
+}
+
+.perc {
+  flex: 0 0 calc(33.33% - 10px); /* 33.33% for 3 items per row, minus gap size */
+  box-sizing: border-box;
+  
+}
+
+.perc button {
+  width: 100%; /* Make buttons take full width of their parent li */
+  padding: 5px; /* Optional padding for buttons */
+  margin: 5px; /* Add margin to create spaces between buttons */
+  box-sizing: border-box;
+  color:white;
+  background-color: hsl(183, 100%, 15%); /* Give each button a background color */
+  border:none;
+  border-radius: 0.2rem;
+}
+
+
+
+
+
+.right-container {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 0.8rem;;
+  padding:2rem;
+  
+
+}
+
+.right-container div {
+  display: flex;
+  justify-content: space-between;
+  gap:5rem;
+ 
+}
+.right-container .tip-amount {
+  margin-bottom: 2rem;
+}
+.right-container p{
+  color:white;
+  font-size: 12px;
+}
+.right-container p span {
+  display: block;
+  font-size: 9px;;
+  color:hsl(186, 14%, 43%);
+
+}
+h3{
+  color:hsl(172, 67%, 45%);
+}
+.right-container button {
+  margin-top:5rem;
+  width:100%;
+  padding:0.8rem;
+  border-radius: 0,5rem;
+  background-color: hsl(186, 14%, 43%);
+  color:hsl(186, 21%, 28%);
+  border:none;
+  text-transform: uppercase;
+}
+.right-container button:focus{
+  cursor: pointer;
+  background-color:rgb(97, 174, 152);
+}
